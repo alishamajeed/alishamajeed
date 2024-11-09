@@ -1,0 +1,136 @@
+
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+   
+}
+.resumeDiv{
+    width: 70%;
+    border:2px solid black ;
+}
+header{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(18, 196, 220);
+    margin-bottom: 70px;
+}
+
+.white{
+    color:rgb(0, 0, 0);
+}
+
+header img{
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+}
+.content{
+    width: 100%;
+    display: flex;
+}
+    
+.content aside{
+    width: 30%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background: #f9f9f9;
+}
+
+.contact ,.skill, .education{
+    margin-bottom: 30px;
+}
+
+.contact h2,
+.education h2 ,
+.skill h2 , 
+.LANGUAGE h2,
+.experince h2,
+.refrence h2{
+    border-bottom: 2px solid #00BFFF;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    line-height: 18px;
+    color: #00BFFF;
+}
+.education{
+    line-height: 30px;
+}
+
+.skill ul{
+    margin-left: 15px;
+}
+
+.main-content{
+    width: 70%;
+    padding-left: 150px;
+    background-color: white;
+}
+
+.experience-items{
+    margin-bottom: 40px;
+}
+
+.experience-items p{
+margin-bottom: 5px;
+}
+.experience-items ul{
+    margin-left: 18px;
+    margin-top: 16px;
+}
+
+.btnDiv{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: white;
+    background:#00BFFF ;
+    cursor: pointer;
+
+&:hover{
+    background: #007b9e;   
+}
+&:active{
+    transform: scale(0.95);
+}
+ }
+.hide{
+    display: none;
+}
+
+
+@media(max-width : 786px){
+    .content{
+        flex-direction: column;
+    }
+    aside , .main-content {
+        width: 100%;
+    }
+}
+
+
+
